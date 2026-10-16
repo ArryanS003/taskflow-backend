@@ -15,3 +15,8 @@ def health_check():
     return {
         "status": "ok"
     }
+@app.get("/about")
+def about():
+    return {
+        "project": "TaskFlow"
+    }
